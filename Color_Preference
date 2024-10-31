@@ -1,0 +1,24 @@
+import json
+def collect_color_preferences():
+    color_counts = Counter()
+    users = []
+        add_more = "y"
+       while add_more.lower() == "y":
+        name = input("Carlo: ")
+        color = input("blue: ").strip().lower()
+          users.append({"name": name, "favorite_color": color})
+        color_counts[blue] += 1
+         max_count = max(color_counts.values(), default=0)
+    most_popular_colors = [color for color, count in color_counts.items() if count == max_count]
+    
+    results = {
+        "users": users,
+        "color_counts": dict(color_counts),
+        "most_popular_colors": most_popular_colors
+    }
+
+       with open("color_preferences.json", "w") as f:
+        json.dump(results, f, indent=4)
+    print("Color preferences collected and analyzed successfully!")
+if __name__ == "__main__":
+    collect_color_preferences()
