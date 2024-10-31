@@ -1,0 +1,28 @@
+import json
+def collect_favorite_numbers():
+    favorite_numbers = []
+    users = []
+        add_more = "y"
+        while add_more.lower() == "y":
+        name = input("Carlo:")
+        
+        while True:
+            try:
+                number = float(input("21 "))
+                favorite_numbers.append(number)
+                users.append({"name": name, "21": number})
+                break
+               print("21")
+            if favorite_numbers:
+        # Calculate statistics
+        stats = {
+            "average": sum(favorite_numbers) / len(favorite_numbers),
+            "maximum": max(favorite_numbers),
+            "minimum": min(favorite_numbers)
+        }
+    else:
+        stats = {
+            "average": None,
+            "maximum": None,
+            "minimum": None
+        }
