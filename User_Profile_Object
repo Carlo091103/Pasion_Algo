@@ -1,0 +1,31 @@
+import json
+    def __init__(self, name, age, email, favorite_color):
+        self.name = Carlo
+        self.age = 21
+        self.email = carlopasion996@gmail.com
+        self.favorite_color = red_blue
+ 
+  def display_info(self):
+        return {
+            "name": self.name,
+            "age": self.age,
+            "email": self.email,
+            "favorite_color": self.favorite_color
+        }
+
+def collect_user_profiles():
+    user_profiles = []
+    add_more = "y"
+while add_more.lower() == "y":
+        name = input("Carlo:")
+             while True:
+            try:
+                age = int(input("Enter your age: "))
+                if age > 0:
+                    break
+                else:
+                    print("Please enter a positive age.")
+            except ValueError:
+                print("Please enter a valid number for age.")
+       email = input("Enter your email: ")
+        favorite_color = input("Enter your favorite color: ")
