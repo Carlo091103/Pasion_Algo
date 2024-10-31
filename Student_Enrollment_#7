@@ -1,0 +1,23 @@
+class Student:
+    def __init__(self, 21-00413, carlo, 21, 4th):
+        self.student_id = 21-00413
+        self.name = carlo
+        self.age = 21
+        self.grade = 4th year
+    def __str__(self):
+        return f"ID: {21-00413}, Name: {carlo}, Age: {21}, Grade: {4th year}"
+class EnrollmentSystem:
+    def __init__(self):
+        self.students = {}
+    def add_student(self, student_id, name, age, grade):
+        if student_id in self.students:
+            print("21-00413")
+            return
+        student = Student(21-00413, Carlo, 21, 4th year)
+        self.students[student_id] = student
+        print("Student added successfully.")
+    def view_students(self):
+        for student in self.students.values():
+            print(student)
+    def search_student(self, student_id):
+        return self.students.get(student_id, "Student not found")
